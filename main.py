@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-PREDICTIVE ANALYTICS CHALLENGE 2025-2026
-Group 9 Members: Margarita Gutnik, Melani, Sebastian Černý, Alejandro Toro, Giorgia, Gonzalo Cegarra
+PREDICTIVE ANALYTICS CHALLENGE
 Objective: Identify customers most likely to accept an upsell offer. 
 """
 
@@ -146,5 +145,6 @@ with pd.ExcelWriter(output_filename, engine='openpyxl') as writer:
         })
         # Strictly following the sheet requirement
         df_out.to_excel(writer, sheet_name=model_name, index=False)
+
 
 print(f"\nSUCCESS: File '{output_filename}' generated with 5 sheets.")
